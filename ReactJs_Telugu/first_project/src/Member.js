@@ -1,8 +1,11 @@
-export function Member() {
+export function Member(values) {
+  console.log(values.city);
+  const memebersName=values.name;
+  const memebersCity=values.city;
   return (
     <div>
-      <h2>Neduri Raju</h2>
-      <p>Hyderabad</p>
+      <h2>{memebersName}</h2>
+      <p>{memebersCity}</p>
     </div>
   );
 }

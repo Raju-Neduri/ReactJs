@@ -9,7 +9,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Member/>
+    <Member name="Raju" city="Hyderabad"/>
+    <Member name="Ram" city="jammikunta"/>
+    <Member name="vaishu" city="Hanamkonda" />
+
   </React.StrictMode>
 );
 
