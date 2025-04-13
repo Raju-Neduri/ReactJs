@@ -3,5 +3,11 @@
   font-size: larger;
   color:white;
   gap: 40px;
-  justify-content: space-between;
+  justify-content: center;
+flex-wrap: wrap;
+}
+
+.member-sub-heading{
+  color: #7AC6D2;
+  font-weight: bold;
 }
