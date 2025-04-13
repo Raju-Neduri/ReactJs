@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import AboutUs from './AboutUs';
 import './App.css';
 import { Member } from './Member';
 
@@ -22,17 +23,15 @@ function App() {
     // </div>
 
     <div>
-      <h1>First batch is the best batch</h1>
-
-      <h2>About us</h2>
-      <p>We are learning ReactJS</p>
+      <h1 style={{backgroundColor:'lightblue', textAlign:"center"}}>First batch is the best batch</h1>
+     <AboutUs />
 
           <Member name="Raju" city="Hyderabad"/>
           <Member name="Ram" city="jammikunta"/>
           <Member name="vaishu" city="Hanamkonda" />
     </div>
   
-  )
-};
+  );
+}
 
 export default App;
