@@ -1,16 +1,20 @@
-body{
+body {
   background-color: #7AC6D2;
-}
-.members-container{
-  display: flex;
-  font-size: larger;
-  color:white;
-  gap: 40px;
-  justify-content: center;
-flex-wrap: wrap;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.member-sub-heading{
-  color: #B5FCCDf;
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+  font-size: larger;
+  color: white;
+}
+
+.member-sub-heading {
+  color: #B5FCCD;
   font-weight: bold;
 }
