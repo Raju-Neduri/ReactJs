@@ -1,4 +1,5 @@
 import React from "react";
+import TestComponents from "./TestComponents";
 const Mango = () => {
   return <h2>Mango are sweet</h2>;
 };
@@ -12,6 +13,7 @@ function Sample() {
       <Mango />
       <Grapes />
       <Grapes />
+      <TestComponents />
     </div>
   );
 }
