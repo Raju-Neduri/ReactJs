@@ -14,8 +14,25 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      const Message = () => <h1 className="message">My Name is Raju </h1>;
-      ReactDOM.render(<Message />, document.getElementById("root"));
+      const Message = (props) => {
+        const { name, greeting } = props;
+        return (
+          <h1 className="message">
+            {greeting},{name}
+          </h1>
+        );
+      };
+
+      const Greeting = () => {
+        return (
+          <div>
+            <Message name="Vaihu" greeting="Hi" />,
+            <Message name="Raju" greeting="Hi" />,
+            <Message name="Ram" greeting="Hi" />,
+          </div>
+        );
+      };
+      ReactDOM.render(<Greeting />, document.getElementById("root"));
     </script>
   </body>
 </html>
