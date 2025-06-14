@@ -3,11 +3,12 @@ const Notification = (props) => {
   return (
     <div className={styling}>
       <img src={source} alt={message} />
-      <span>{message}</span>
+      <p style={{ margin: 0 }}>{message}</p>
     </div>
   );
 };
 
+// ...rest of the code remains unchanged...
 const Element = () => {
   return (
     <div className="maindiv">
