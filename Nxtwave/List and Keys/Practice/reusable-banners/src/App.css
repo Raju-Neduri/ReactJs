@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -11,4 +12,132 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Write your code here. */
+/* Write CSS code here */
+/* Page layout */
+.app-container {
+  padding: 40px 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4faff;
+  text-align: center;
+}
+
+/* Heading area */
+.heading-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.main-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.main-description {
+  font-size: 18px;
+  color: #334155;
+}
+
+/* Cards layout */
+/* Overall layout */
+.app-container {
+  padding: 40px 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4faff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Heading section */
+.heading-container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.main-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.main-description {
+  font-size: 18px;
+  color: #334155;
+}
+
+/* Cards layout */
+.cards-container {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Mobile default: 1 column */
+  gap: 24px;
+  padding: 0;
+  margin-top: 40px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For desktop: 2 cards per row */
+@media screen and (min-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Card styling */
+.card {
+  border-radius: 12px;
+  padding: 20px;
+  color: #ffffff;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card image */
+.card-image {
+  width: 50px;
+  height: 70px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+/* Card title */
+.card-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Card description */
+.card-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Background colors */
+.card-1 {
+  background-color: #f7931e;
+}
+
+.card-2 {
+  background-color: #6d28d9;
+}
+
+.card-3 {
+  background-color: #0f172a;
+}
+
+.card-4 {
+  background-color: #14b8a6;
+}
