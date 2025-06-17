@@ -1,0 +1,38 @@
+.app-container {
+  background-color: #bfe9ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 40px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 24px;
+  color: #334155;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #ff6e7f;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.note {
+  margin-top: 20px;
+  color: #1e293b;
+  font-size: 14px;
+}
