@@ -1,4 +1,4 @@
-import Header from "./components/Header.jsx";
+import Header from "./components/Header/Header.jsx";
 import CoreConceptsSection from "./components/CoreConceptsSection.jsx";
 
 function App() {
