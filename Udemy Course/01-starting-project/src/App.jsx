@@ -4,8 +4,11 @@ import TabButton from "./components/TabButton.jsx";
 import "./index.css";
 
 function App() {
-  function handleSelect() {
-    console.log("Hello, you are selected");
+  let tabContent = "Please select the Tab";
+
+  function handleSelect(selectedButton) {
+    console.log(selectedButton);
+    tabContent = selectedButton;
   }
 
   return (
@@ -16,11 +19,14 @@ function App() {
         <section id="examples">
           <h2>Example</h2>
           <menu>
-            <TabButton onSelect={handleSelect}>Component</TabButton>
-            <TabButton>JSX</TabButton>
-            <TabButton>Props</TabButton>
-            <TabButton>State</TabButton>
+            <TabButton onSelect={() => handleSelect("Components")}>
+              Components
+            </TabButton>
+            <TabButton onSelect={() => handleSelect("Jsx")}>Jsx</TabButton>
+            <TabButton onSelect={() => handleSelect("Props")}>Props</TabButton>
+            <TabButton onSelect={() => handleSelect("State")}>State</TabButton>
           </menu>
+          {tabContent}
         </section>
       </main>
     </div>
