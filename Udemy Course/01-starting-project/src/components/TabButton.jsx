@@ -1,0 +1,16 @@
+import React, { Children } from "react";
+
+const TabButton = ({ children }) => {
+  function handleClick() {
+    console.log("clicked");
+  }
+  return (
+    <>
+      <li>
+        <button onClick={handleClick}>{children}</button>
+      </li>
+    </>
+  );
+};
+
+export default TabButton;
