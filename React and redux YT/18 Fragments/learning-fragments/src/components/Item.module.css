@@ -1,0 +1,13 @@
+.foodItem {
+  color: #2d8659;
+  font-weight: bold;
+  background-color: #e6ffe6;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 10px 16px;
+  transition: background 0.2s;
+}
+
+.foodItem:hover {
+  background-color: #b3ffd9;
+}
