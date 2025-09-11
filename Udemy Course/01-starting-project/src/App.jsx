@@ -2,7 +2,12 @@ import Header from "./components/Header/Header.jsx";
 import CoreConceptsSection from "./components/CoreConceptsSection.jsx";
 import TabButton from "./components/TabButton.jsx";
 import "./index.css";
+
 function App() {
+  function handleSelect() {
+    console.log("Hello, you are selected");
+  }
+
   return (
     <div>
       <Header />
@@ -11,7 +16,7 @@ function App() {
         <section id="examples">
           <h2>Example</h2>
           <menu>
-            <TabButton>Component</TabButton>
+            <TabButton onSelect={handleSelect}>Component</TabButton>
             <TabButton>JSX</TabButton>
             <TabButton>Props</TabButton>
             <TabButton>State</TabButton>
