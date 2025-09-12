@@ -6,7 +6,7 @@ import "./index.css";
 import { EXAMPLES } from "./data.js";
 
 function App() {
-  const [selectedTopic, SetSelectedTopic] = useState("components");
+  const [selectedTopic, SetSelectedTopic] = useState();
 
   function handleSelect(selectedButton) {
     SetSelectedTopic(selectedButton);
@@ -30,13 +30,17 @@ function App() {
             <TabButton onSelect={() => handleSelect("state")}>State</TabButton>
           </menu>
 
-          <div id="tab-content">
-            <h3>{EXAMPLES[selectedTopic].title}</h3>
-            <p>{EXAMPLES[selectedTopic].description}</p>
-            <pre>
-              <code>{EXAMPLES[selectedTopic].code}</code>
-            </pre>
-          </div>
+          {!selectedTopic && <p>Please Select a Topic</p>}
+
+          {selectedTopic && (
+            <div id="tab-content">
+              <h3>{EXAMPLES[selectedTopic].title}</h3>
+              <p>{EXAMPLES[selectedTopic].description}</p>
+              <pre>
+                <code>{EXAMPLES[selectedTopic].code}</code>
+              </pre>
+            </div>
+          )}
         </section>
       </main>
     </div>
