@@ -1,6 +1,6 @@
 import Appname from "./Components/Appname";
 import AppTodo from "./Components/AppTodo";
-import TodoItem from "./Components/TodoItem";
+import TodoItems from "./Components/TodoItems";
 import "./App.css";
 
 function App() {
@@ -13,15 +13,26 @@ function App() {
       name: "Learn ReactJs",
       dueDate: "12-09-2025",
     },
+    {
+      name: "Buy Groceries",
+      dueDate: "13-09-2025",
+    },
+    {
+      name: "Prepare Presentation",
+      dueDate: "14-09-2025",
+    },
+    {
+      name: "Call Mom",
+      dueDate: "15-09-2025",
+    },
   ];
+
   return (
     <div>
       <center className="todo-container">
         <Appname />
         <AppTodo />
-        <div className="items-container">
-          <TodoItem todoName={todoItems.name} todoDate="24-11-2025" />
-        </div>
+        <TodoItems items={todoItems} />
       </center>
     </div>
   );

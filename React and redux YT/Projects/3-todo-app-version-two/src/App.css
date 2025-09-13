@@ -1,21 +1,103 @@
-h1 {
-  font-weight: 700;
-  font-size: 45px;
-  margin: 10px;
-  margin-bottom: 20px;
+body {
+  background: #f7f7f7;
+  display: flex; /* enable flexbox */
+  justify-content: center; /* center horizontally */
+  align-items: flex-start; /* align from top */
+  min-height: 100vh; /* full screen height */
+  padding-top: 40px; /* push app down a bit */
 }
 
+.todo-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px 24px;
+  max-width: 600px;
+  width: 100%; /* make it responsive */
+}
+
+/* App title */
+
+/* Input fields */
 input {
   width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  font-size: 16px;
 }
 
+/* Todo items container */
 .items-container {
   text-align: left;
+  margin-top: 24px;
 }
 
-.kg-row {
-  margin: 10px 5px;
+/* Row styles */
+.kg-row,
+.row.kg-row {
+  margin: 10px 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #eaeaea;
+  align-items: center;
+  display: flex; /* use flexbox for better alignment */
+  justify-content: space-between;
 }
 
-.kg-button {
+/* Remove border for last row */
+.kg-row:last-child,
+.row.kg-row:last-child {
+  border-bottom: none;
+}
+
+/* Delete button */
+.btn-danger {
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.2s;
+  margin: 8px;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+/* Add button */
+.btn-success.kg-button {
+  background: #2ecc71;
+  border: none;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-success.kg-button:hover {
+  background: #27ae60;
+}
+
+/* Column widths */
+.col-6,
+.col-4,
+.col-2 {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+}
+.col-4 {
+  flex: 0 0 33%;
+}
+.col-2 {
+  flex: 0 0 17%;
+  justify-content: flex-end;
 }
