@@ -28,13 +28,13 @@ function App() {
   ];
 
   return (
-    <div>
+    <>
       <center className="todo-container">
         <Appname />
         <AppTodo />
         <TodoItems items={todoItems} />
       </center>
-    </div>
+    </>
   );
 }
 
