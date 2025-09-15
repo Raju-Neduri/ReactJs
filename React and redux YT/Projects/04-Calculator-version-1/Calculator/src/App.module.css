@@ -1,0 +1,12 @@
+.calculator {
+  border: 1px solid black;
+  width: 200px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center; /* vertical */
+  height: 80vh;
+}
+
+.display {
+}
