@@ -6,7 +6,7 @@ function App() {
       <div className={styles.calculator}>
         <input type="text" className={styles.display} />
         <div id="button-Container">
-          <button>c</button>
+          <button>+</button>
         </div>
       </div>
     </>
