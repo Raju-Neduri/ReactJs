@@ -6,6 +6,7 @@ const Item = ({ foodItem, index }) => {
     <>
       <li className={`list-group-item ${styles.foodItem}`}>
         {index + 1}. {foodItem}
+        <button className={styles.buyBtn}>Buy</button>
       </li>
     </>
   );
