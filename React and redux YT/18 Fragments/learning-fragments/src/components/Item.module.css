@@ -1,41 +1,62 @@
-.foodItem {
-  color: #2d8659;
-  font-weight: bold;
-  background-color: #e6ffe6;
-  border-radius: 6px;
-  margin-bottom: 8px;
-  padding: 10px 16px;
-  transition: background 0.2s;
-}
-
-.foodItem:hover {
-  background-color: #b3ffd9;
-}
+/* Container for each food item */
 .foodItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  background-color: #f9f9f9; /* light card background */
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.foodItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Wrapper for button to position badge */
+.buttonWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Buy button */
 .buyBtn {
   background-color: #28a745; /* green */
   color: #fff;
   border: none;
-  border-radius: 6px;
-  padding: 8px 16px;
+  border-radius: 8px;
+  padding: 10px 18px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .buyBtn:hover {
-  background-color: #218838;
+  background-color: #218838; /* darker green */
   transform: translateY(-2px);
 }
 
 .buyBtn:active {
   background-color: #1e7e34;
   transform: translateY(0);
+}
+
+/* Badge for count */
+.countBadge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }

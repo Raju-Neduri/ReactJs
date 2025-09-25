@@ -1,0 +1,22 @@
+.foodInput {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+
+  margin-bottom: 15px;
+}
+
+.foodInput:focus {
+  border-color: #4cafef;
+  box-shadow: 0 0 6px rgba(76, 175, 239, 0.4);
+}
+
+.foodInput::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
