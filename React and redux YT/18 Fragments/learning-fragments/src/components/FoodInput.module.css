@@ -8,7 +8,7 @@
   outline: none;
   transition: all 0.2s ease-in-out;
 
-  margin-bottom: 15px;
+  margin: 15px;
 }
 
 .foodInput:focus {

@@ -1,8 +1,25 @@
 .App {
-  margin: 25px;
+  margin: 40px auto;
+  max-width: 700px;
   text-align: center;
+  padding: 30px 40px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: none; /* removed plain border */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.App:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 .heading {
   text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #07a402, #1a5f03);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
