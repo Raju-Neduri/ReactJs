@@ -1,14 +1,6 @@
-import React, { useState } from "react";
 import styles from "./Item.module.css";
 
-const Item = ({ foodItem, index, handleBuyButton }) => {
-  const [count, setCount] = useState(0);
-
-  const handleBuyButtonClick = (e) => {
-    setCount((prev) => prev + 1);
-    console.log(e);
-  };
-
+const Item = ({ foodItem, index, handleBuyButton, count }) => {
   return (
     <li className={`list-group-item ${styles.foodItem}`}>
       {index + 1}. {foodItem}

@@ -1,4 +1,4 @@
 .container {
-  max-width: 550px;
   padding-left: 30px;
+  min-width: 500px;
 }
