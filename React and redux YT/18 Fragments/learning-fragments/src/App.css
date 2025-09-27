@@ -31,3 +31,27 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.searched {
+  font-size: 1.2rem;
+  color: #1a5f03;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f0f9f0; /* light green highlight */
+  border-radius: 6px;
+  display: inline-block;
+  border-right: 4px solid #07a402;
+  border-left: 4px solid #07a402;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.searched:hover {
+  background-color: #e6f7e6;
+  transform: translateY(-1px);
+}
+
+.btn {
+  background-color: #5f9266;
+}
